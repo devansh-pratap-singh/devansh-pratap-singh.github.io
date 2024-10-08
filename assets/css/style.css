@@ -26,13 +26,13 @@ h4 {
 }
 
 .container {
-    width: 50%;
+    width: 75%;
     margin: 0 auto;
     padding: 1.5em 0;
 }
 
 .container-full {
-    width: 75%;
+    width: 80%;
     margin: 0 auto;
     padding: 1em 0;
 }
@@ -297,4 +297,53 @@ footer {
 
 footer p {
     font-size: 1rem;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header .subtitle {
+        font-size: 1rem;
+    }
+
+    .skills-list li,
+    .project,
+    .experience,
+    .about {
+        padding: 1em;
+        font-size: 0.9rem;
+    }
+
+    .section h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    header .subtitle {
+        font-size: 0.9rem;
+    }
+
+    .skills-list li,
+    .project,
+    .experience,
+    .about {
+        padding: 0.8em;
+        font-size: 0.85rem;
+    }
+
+    .section h2 {
+        font-size: 1.2rem;
+    }
 }
