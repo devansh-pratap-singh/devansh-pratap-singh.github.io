@@ -7,6 +7,7 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Devansh Pratap Singh | Portfolio</title>
 	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lora:wght@600&display=swap"
 		rel="stylesheet">
 	<link rel="icon" href="assets/favicon.png" type="image/x-icon">
@@ -17,7 +18,7 @@
 	<header>
 		<div class="container">
 			<h1>Devansh Pratap Singh</h1>
-			<p class="subtitle">Analytics & BI Enthusiast</p>
+			<p class="subtitle">Analytics & Big Data Enthusiast</p>
 		</div>
 	</header>
 
@@ -25,18 +26,20 @@
 		<section id="about" class="section">
 			<div class="container">
 				<h2>About Me</h2>
-				<p>Freshly minted with a Master's degree in Business Analytics from The University of Texas at Dallas,
-					I’m on the lookout for full-time opportunities in Data Engineering and Data Analytics. Armed with a
-					robust skill set and certifications like IBM Data Engineering, Microsoft Azure, and Google
-					Analytics, I excel in turning data into actionable insights. With proficiency in Python, SQL, Excel,
-					and BI Tools, I’ve tackled large complex datasets. Passionate about harnessing data to drive
-					business impact, I thrive in dynamic, collaborative environments. Let’s connect and explore how we
-					can create meaningful solutions together!</p>
+				<div class="about">
+					<p>Freshly minted with a Master's degree in Business Analytics from The University of Texas at
+						Dallas, I’m on the lookout for full-time opportunities in Data Engineering and Data Analytics.
+						Armed with a robust skill set and certifications like IBM Data Engineering, Microsoft Azure, and
+						Google Analytics, I excel in turning data into actionable insights. With proficiency in Python,
+						SQL, Excel, and BI Tools, I’ve tackled large complex datasets. Passionate about harnessing data
+						to drive business impact, I thrive in dynamic, collaborative environments. Let’s connect and
+						explore how we can create meaningful solutions together!</p>
+				</div>
 			</div>
 		</section>
 
 		<section id="skills" class="section">
-			<div class="container">
+			<div class="container-full">
 				<h2>Skills</h2>
 				<div class="skill">
 					<h3>Analysis & Visualization Tools</h3>
@@ -69,7 +72,8 @@
 			<div class="container">
 				<h2>Experience</h2>
 				<div class="experience">
-					<h3>Data Science Intern - Pull Logic Inc.<br>June, 2023 - August, 2023</h3>
+					<h3>Data Science Intern - Pull Logic Inc.</h3>
+					<h4>June, 2023 - August, 2023</h4>
 					<ul class="experience-list">
 						<li>Exploratory Data Analysis on sales data using Python (XGBoost, Prophet), achieving 87%
 							accuracy in demand forecasting models.</li>
@@ -82,7 +86,8 @@
 					</ul>
 				</div>
 				<div class="experience">
-					<h3>Project Engineer - Wipro Limited<br>June, 2021 - July, 2022</h3>
+					<h3>Project Engineer - Wipro Limited</h3>
+					<h4>June, 2021 - July, 2022</h4>
 					<ul class="experience-list">
 						<li>Engineered the development and deployment of a robust middleware integration solution on a
 							cloud-based platform, optimizing performance scalability and expediting file transfer
@@ -100,84 +105,100 @@
 		<section id="projects" class="section">
 			<div class="container">
 				<h2>Projects</h2>
-				<div class="project">
-					<h3><a href="https://github.com/devansh-pratap-singh/imdb-reviews-text-analysis"
-							target="_blank">Text Analysis on IMDb Movie Reviews</a></h3>
-					<p>In this data-driven world, extracting valuable insights from vast amounts of text data has become
-						an essential task for many industries. In this project, I perform text analysis on movie reviews
-						from IMDB using Google BigQuery and Vertex AI. By leveraging BigQuery's powerful capabilities
-						alongside Vertex AI's generative models, I delved into sentiment analysis and keyword extraction
-						to gain meaningful insights from the reviews dataset.</p>
-				</div>
-				<div class="project">
-					<h3><a href="https://github.com/devansh-pratap-singh/automated-bank-data-compilation"
-							target="_blank">Automating Data Compilation of the World's Largest Banks</a></h3>
-					<p>In today's fast-paced financial landscape, staying updated on the global banking industry's
-						dynamics is crucial for various stakeholders. As an aspiring data engineer, I created this sript
-						to automate the process of compiling and analyzing data on the world's largest banks. This
-						involved extracting, transforming, and loading market capitalization data for the top 10 banks
-						globally, in multiple currencies, using Python.</p>
-				</div>
-				<div class="project">
-					<h3><a href="https://github.com/devansh-pratap-singh/stock-market-time-series-analysis"
-							target="_blank">Time Series Analysis on Stock Market Data</a></h3>
-					<p>Utilized advanced ARIMA modeling techniques to analyze 12 years of DJIA stock prices, crafting
-						predictive models with a robust sigma square value of 44.43. Resulting forecasts provided
-						actionable insights for informed decision-making in stock trend analysis.</p>
-				</div>
-				<div class="project">
-					<h3><a href="https://github.com/devansh-pratap-singh/airbnb-rentals-analysis" target="_blank">Airbnb
-							Rentals Analysis in Barcelona</a></h3>
-					<p>Conducted Predictive Analysis on an Airbnb Dataset using Linear Regression, Random Forest, and
-						XGBoost as data models. Analyzed the dependency of property rentals on various factors to assist
-						both new and existing hosts in competitively pricing their properties.</p>
-				</div>
-				<div class="project">
-					<a href="https://github.com/devansh-pratap-singh" target="_blank">More Projects</a>
-				</div>
+				<a href="https://github.com/devansh-pratap-singh/imdb-reviews-text-analysis" target="_blank">
+					<div class="project">
+						<h3>Text Analysis on IMDb Movie Reviews</h3>
+						<p>In this data-driven world, extracting valuable insights from vast amounts of text data has
+							become an essential task for many industries. In this project, I perform text analysis on
+							movie reviews from IMDB using Google BigQuery and Vertex AI. By leveraging BigQuery's
+							powerful capabilities alongside Vertex AI's generative models, I delved into sentiment
+							analysis and keyword extraction to gain meaningful insights from the reviews dataset.</p>
+					</div>
+				</a>
+				<a href="https://github.com/devansh-pratap-singh/automated-bank-data-compilation" target="_blank">
+					<div class="project">
+						<h3>Automating Data Compilation of the World's Largest Banks</h3>
+						<p>In today's fast-paced financial landscape, staying updated on the global banking industry's
+							dynamics is crucial for various stakeholders. As an aspiring data engineer, I created this
+							sript to automate the process of compiling and analyzing data on the world's largest banks.
+							This involved extracting, transforming, and loading market capitalization data for the top
+							10 banks globally, in multiple currencies, using Python.</p>
+					</div>
+				</a>
+				<a href="https://github.com/devansh-pratap-singh/stock-market-time-series-analysis" target="_blank">
+					<div class="project">
+						<h3>Time Series Analysis on Stock Market Data</h3>
+						<p>Utilized advanced ARIMA modeling techniques to analyze 12 years of DJIA stock prices,
+							crafting predictive models with a robust sigma square value of 44.43. Resulting forecasts
+							provided actionable insights for informed decision-making in stock trend analysis.</p>
+					</div>
+				</a>
+				<a href="https://github.com/devansh-pratap-singh/airbnb-rentals-analysis" target="_blank">
+					<div class="project">
+						<h3>Airbnb
+							Rentals Analysis in Barcelona</h3>
+						<p>Conducted Predictive Analysis on an Airbnb Dataset using Linear Regression, Random Forest,
+							and XGBoost as data models. Analyzed the dependency of property rentals on various factors
+							to assist both new and existing hosts in competitively pricing their properties.</p>
+					</div>
+				</a>
+				<a href="https://github.com/devansh-pratap-singh" target="_blank">
+					<div class="project">
+						<h4>More Projects</h4>
+					</div>
+				</a>
 			</div>
 		</section>
 
 		<section id="educations" class="section">
-			<div class="container">
+			<div class="container-full">
 				<h2>Education</h2>
 				<div class="education">
 					<h3>Master of Science in Business Analytics</h3>
-					<p>The University of Texas - Dallas, USA<br>August, 2022 - May, 2024</p>
+					<h4>The University of Texas - Dallas, USA<br>August, 2022 - May, 2024</h4>
 				</div>
 				<div class="education">
 					<h3>Graduate Certificate in Business Intelligence and Data Mining</h3>
-					<p>The University of Texas - Dallas, USA<br>January, 2024 - May, 2024</p>
+					<h4>The University of Texas - Dallas, USA<br>January, 2024 - May, 2024</h4>
 				</div>
 				<div class="education">
 					<h3>Bachelor of Technology in Electrical and Electronics Engineering</h3>
-					<p>National Institute of Technology - Jamshedpur, India<br>August, 2017 - May, 2021</p>
+					<h4>National Institute of Technology - Jamshedpur, India<br>August, 2017 - May, 2021</h4>
 				</div>
-				<h3>Certifications</h3>
 				<div class="certifications">
+					<h3>Certifications</h3>
 					<ul class="certifications-list">
-						<li><a href="http://" target="_blank">IBM Data Engineering Professional Certificate</a></li>
-						<li><a href="https://learn.microsoft.com/api/credentials/share/en-us/devanshpratapsingh/33793490DD5A1341?sharingId"
-								target="_blank">Microsoft Azure AI Fundamentals</a></li>
-						<li><a href="https://skillshop.credential.net/63a7c754-a219-401b-a0a6-4bd3524d5e59"
-								target="_blank">Google
-								Analytics</a></li>
-						<li><a href="https://www.datacamp.com/statement-of-accomplishment/track/a1ccfc779c267218e3fd5107ad71227608a3947f"
-								target="_blank">Power BI Fundamentals</a></li>
+						<a href="http://" target="_blank">
+							<li>IBM Data Engineering Professional</li>
+						</a>
+						<a href="https://learn.microsoft.com/api/credentials/share/en-us/devanshpratapsingh/33793490DD5A1341?sharingId"
+							target="_blank">
+							<li>Microsoft Azure AI Fundamentals</li>
+						</a>
+						<a href="https://skillshop.credential.net/63a7c754-a219-401b-a0a6-4bd3524d5e59" target="_blank">
+							<li>Google Analytics</li>
+						</a>
+						<a href="https://www.datacamp.com/statement-of-accomplishment/track/a1ccfc779c267218e3fd5107ad71227608a3947f"
+							target="_blank">
+							<li>Power BI Fundamentals</li>
+						</a>
 					</ul>
 					<a href="https://www.linkedin.com/in/devanshpratapsingh/details/certifications/"
-						target="_blank">More
-						Certifications</a>
+						target="_blank">More Certifications</a>
 				</div>
 			</div>
 		</section>
 
 		<section id="contact" class="section">
-			<div class="container">
-				<h2>Contact</h2>
-				<p><a href="mailto:devansh.pratap@gmail.com" target="_blank">Email</a></p>
-				<p><a href="https://www.linkedin.com/in/devanshpratapsingh/" target="_blank">LinkedIn</a></p>
-				<p><a href="https://github.com/devansh-pratap-singh" target="_blank">GitHub</a></p>
+			<h2>Contact</h2>
+			<div id="contact-style" class="container">
+				<ul class="contact-list">
+					<li><a href="mailto:devansh.pratap@gmail.com" target="_blank" class="fa fa-envelope"> Email</a></li>
+					<li><a href="https://www.linkedin.com/in/devanshpratapsingh/" target="_blank"
+							class="fa fa-linkedin"> LinkedIn</a></li>
+					<li><a href="https://github.com/devansh-pratap-singh" target="_blank" class="fa fa-github">
+							GitHub</a></li>
+				</ul>
 			</div>
 		</section>
 	</main>
@@ -187,24 +208,6 @@
 			<p>&copy; 2024 Devansh Pratap Singh. All Rights Reserved.</p>
 		</div>
 	</footer>
-
-	<script>
-		const sections = document.querySelectorAll('.section');
-		const options = { threshold: 0.2 };
-		const observer = new IntersectionObserver(function (entries, observer) {
-			entries.forEach(entry => {
-				if (!entry.isIntersecting) {
-					return;
-				}
-				entry.target.classList.add('show');
-				observer.unobserve(entry.target);
-			});
-		}, options);
-
-		sections.forEach(section => {
-			observer.observe(section);
-		});
-	</script>
 
 </body>
 
