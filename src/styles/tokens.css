@@ -1,0 +1,110 @@
+/* ─── Typography ─────────────────────────────────────────────── */
+:root {
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-body:    'DM Sans', system-ui, sans-serif;
+
+  /* Scale — use font shorthand: weight size/line-height family */
+  --text-display-xl: 600 56px/1.0  var(--font-display); /* Hero name desktop  */
+  --text-display-lg: 600 38px/1.0  var(--font-display); /* Hero name mobile   */
+  --text-display-md: 600 24px/1.1  var(--font-display); /* Sub-display        */
+  --text-quote:      400 15px/1.9  var(--font-display); /* About pull-quote   */
+  --text-heading-lg: 500 18px/1.3  var(--font-body);    /* Role titles        */
+  --text-heading-md: 500 14px/1.4  var(--font-body);    /* Card titles        */
+  --text-body-lg:    400 14px/1.75 var(--font-body);    /* About body copy    */
+  --text-body-md:    400 12px/1.75 var(--font-body);    /* Card descriptions  */
+  --text-label:      500 10px/1.0  var(--font-body);    /* Section labels     */
+  --text-caption:    400  9px/1.5  var(--font-body);    /* Tags, pills        */
+
+  --tracking-display: -0.02em;  /* Applied to display-xl/lg headings */
+  --tracking-label:    0.3em;   /* Applied to uppercase section labels */
+
+  /* ─── Spacing ────────────────────────────────────────────────── */
+  --space-1:  4px;
+  --space-2:  8px;
+  --space-3:  12px;
+  --space-4:  16px;
+  --space-5:  20px;
+  --space-6:  24px;
+  --space-8:  32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+
+  /* ─── Border ─────────────────────────────────────────────────── */
+  --radius-sm:     4px;
+  --radius-md:     6px;
+  --radius-lg:     8px;
+  --radius-pill: 999px;
+  --border-thin:   1px;
+  --border-base:   1.5px;  /* Skill pills, secondary btn */
+  --border-accent: 3px;    /* Project card left border   */
+
+  /* ─── Motion ─────────────────────────────────────────────────── */
+  --duration-fast:   150ms;
+  --duration-base:   200ms;
+  --duration-slow:   300ms;  /* Also used for theme switch CSS transition */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* ─── Layout ─────────────────────────────────────────────────── */
+  --max-width: 900px;
+  --z-nav:     100;
+
+  /* ─── Dot grid (hero signature element) ─────────────────────── */
+  --dot-size: 14px;  /* background-size for the radial-gradient pattern */
+}
+
+/* ─── Light mode ──────────────────────────────────────────── */
+:root,
+[data-theme="light"] {
+  --color-bg-base:          #FAFAF7;
+  --color-bg-surface:       #FFFFFF;
+  --color-bg-warm:          #F5F0EB;  /* About, footer, contact strip */
+  --color-bg-nav:           #FFFFFF;
+
+  --color-text-primary:     #1A1A2E;
+  --color-text-secondary:   #6A6A6A;  /* a11y fix: was #888 (3.9:1) → 5.2:1 */
+  --color-text-muted:       #999999;
+
+  --color-accent:           #C0572A;  /* Sienna — primary brand */
+  --color-on-accent:        #FFFFFF;
+  --color-accent-subtle:    #FDF8F5;  /* Tinted surface behind primary cards */
+  --color-accent-tag-bg:    #F5E8E3;
+  --color-accent-tag-text:  #C0572A;
+  --color-accent-accessible:#A84C24;  /* Accessible accent — darker variant for small text */
+
+  --color-border:           #EBE6DE;
+  --color-border-muted:     #DDD0C8;  /* Secondary project card, experience */
+
+  --color-skill-dim-border: #EBE6DE;
+  --color-skill-dim-text:   #6A6A6A;
+
+  --color-dot:              #C0B8AC;  /* Dot-grid dot color */
+}
+
+/* ─── Dark mode ────────────────────────────────────────────────── */
+[data-theme="dark"] {
+  --color-bg-base:          #0D1B2A;
+  --color-bg-surface:       #0F2235;
+  --color-bg-warm:          #0F2235;
+  --color-bg-nav:           #0D1B2A;
+
+  --color-text-primary:     #E8EEF4;
+  --color-text-secondary:   #6B8CAE;  /* 3.8:1 — valid for 14px+ text; flag at 12px */
+  --color-text-muted:       #4A7A9B;
+
+  --color-accent:           #0ABFB8;  /* Electric teal — 5.3:1 on base ✓ */
+  --color-on-accent:        #0D1B2A;
+  --color-accent-subtle:    #0A2030;
+  --color-accent-tag-bg:    #0A2030;
+  --color-accent-tag-text:  #0ABFB8;
+  --color-accent-accessible:#0bd3cc;  /* Accessible accent — darker variant for small text */
+
+  --color-border:           #1E3A52;
+  --color-border-muted:     #1E3A52;
+
+  --color-skill-dim-border: #1E3A52;
+  --color-skill-dim-text:   #6B8CAE;
+
+  --color-dot:              #1E3A52;
+}

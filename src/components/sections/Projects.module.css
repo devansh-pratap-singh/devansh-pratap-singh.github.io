@@ -1,0 +1,31 @@
+.projects {
+  background-color: var(--color-bg-surface);
+  transition: background-color var(--duration-slow);
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  margin-bottom: var(--space-6);
+}
+
+.more {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.moreLink {
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--color-accent);
+  border-bottom: 1px solid var(--color-accent);
+  padding-bottom: 1px;
+  transition:
+    color var(--duration-slow),
+    border-color var(--duration-slow),
+    opacity var(--duration-fast);
+}
+
+.moreLink:hover { opacity: 0.72; }
