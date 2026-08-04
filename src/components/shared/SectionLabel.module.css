@@ -1,0 +1,8 @@
+.label {
+	font: var(--text-label);
+	color: var(--color-accent-accessible);
+	letter-spacing: var(--tracking-label);
+	text-transform: uppercase;
+	margin-bottom: var(--space-3);
+	transition: color var(--duration-slow);
+}

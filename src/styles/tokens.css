@@ -1,0 +1,110 @@
+/* ─── Typography ─────────────────────────────────────────────── */
+:root {
+	--font-display: 'Fraunces', Georgia, serif;
+	--font-body: 'DM Sans', system-ui, sans-serif;
+
+	/* Scale — use font shorthand: weight size/line-height family */
+	--text-display-xl: 600 56px/1 var(--font-display); /* Hero name desktop  */
+	--text-display-lg: 600 38px/1 var(--font-display); /* Hero name mobile   */
+	--text-display-md: 600 24px/1.1 var(--font-display); /* Sub-display        */
+	--text-quote: 400 15px/1.9 var(--font-display); /* About pull-quote   */
+	--text-heading-lg: 500 18px/1.3 var(--font-body); /* Role titles        */
+	--text-heading-md: 500 14px/1.4 var(--font-body); /* Card titles        */
+	--text-body-lg: 400 14px/1.75 var(--font-body); /* About body copy    */
+	--text-body-md: 400 12px/1.75 var(--font-body); /* Card descriptions  */
+	--text-label: 500 10px/1 var(--font-body); /* Section labels     */
+	--text-caption: 400 9px/1.5 var(--font-body); /* Tags, pills        */
+
+	--tracking-display: -0.02em; /* Applied to display-xl/lg headings */
+	--tracking-label: 0.3em; /* Applied to uppercase section labels */
+
+	/* ─── Spacing ────────────────────────────────────────────────── */
+	--space-1: 4px;
+	--space-2: 8px;
+	--space-3: 12px;
+	--space-4: 16px;
+	--space-5: 20px;
+	--space-6: 24px;
+	--space-8: 32px;
+	--space-10: 40px;
+	--space-12: 48px;
+	--space-16: 64px;
+	--space-20: 80px;
+
+	/* ─── Border ─────────────────────────────────────────────────── */
+	--radius-sm: 4px;
+	--radius-md: 6px;
+	--radius-lg: 8px;
+	--radius-pill: 999px;
+	--border-thin: 1px;
+	--border-base: 1.5px; /* Skill pills, secondary btn */
+	--border-accent: 3px; /* Project card left border   */
+
+	/* ─── Motion ─────────────────────────────────────────────────── */
+	--duration-fast: 150ms;
+	--duration-base: 200ms;
+	--duration-slow: 300ms; /* Also used for theme switch CSS transition */
+	--ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+
+	/* ─── Layout ─────────────────────────────────────────────────── */
+	--max-width: 900px;
+	--z-nav: 100;
+
+	/* ─── Dot grid (hero signature element) ─────────────────────── */
+	--dot-size: 14px; /* background-size for the radial-gradient pattern */
+}
+
+/* ─── Light mode ──────────────────────────────────────────── */
+:root,
+[data-theme='light'] {
+	--color-bg-base: #fafaf7;
+	--color-bg-surface: #ffffff;
+	--color-bg-warm: #f5f0eb; /* About, footer, contact strip */
+	--color-bg-nav: #ffffff;
+
+	--color-text-primary: #1a1a2e;
+	--color-text-secondary: #6a6a6a; /* a11y fix: was #888 (3.9:1) → 5.2:1 */
+	--color-text-muted: #999999;
+
+	--color-accent: #c0572a; /* Sienna — primary brand */
+	--color-on-accent: #ffffff;
+	--color-accent-subtle: #fdf8f5; /* Tinted surface behind primary cards */
+	--color-accent-tag-bg: #f5e8e3;
+	--color-accent-tag-text: #c0572a;
+	--color-accent-accessible: #a84c24; /* Accessible accent — darker variant for small text */
+
+	--color-border: #ebe6de;
+	--color-border-muted: #ddd0c8; /* Secondary project card, experience */
+
+	--color-skill-dim-border: #ebe6de;
+	--color-skill-dim-text: #6a6a6a;
+
+	--color-dot: #c0b8ac; /* Dot-grid dot color */
+}
+
+/* ─── Dark mode ────────────────────────────────────────────────── */
+[data-theme='dark'] {
+	--color-bg-base: #0d1b2a;
+	--color-bg-surface: #0f2235;
+	--color-bg-warm: #0f2235;
+	--color-bg-nav: #0d1b2a;
+
+	--color-text-primary: #e8eef4;
+	--color-text-secondary: #6b8cae; /* 3.8:1 — valid for 14px+ text; flag at 12px */
+	--color-text-muted: #4a7a9b;
+
+	--color-accent: #0abfb8; /* Electric teal — 5.3:1 on base ✓ */
+	--color-on-accent: #0d1b2a;
+	--color-accent-subtle: #0a2030;
+	--color-accent-tag-bg: #0a2030;
+	--color-accent-tag-text: #0abfb8;
+	--color-accent-accessible: #0bd3cc; /* Accessible accent — darker variant for small text */
+
+	--color-border: #1e3a52;
+	--color-border-muted: #1e3a52;
+
+	--color-skill-dim-border: #1e3a52;
+	--color-skill-dim-text: #6b8cae;
+
+	--color-dot: #1e3a52;
+}
